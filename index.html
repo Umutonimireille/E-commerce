@@ -1,93 +1,242 @@
+<?php
+ require_once('connection.php');
+?>
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <link rel="stylesheet " href="new.css">
-</head>
-<body>
-
-   <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top ">
-        <div class="container" >
-            <img src="images/logo.png">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i id="bar" class=" fas fa-bars "></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li>
-              <li class="nav-item">
-                <i class="far fa-search"></i>
-                <i class="far fa-shopping-bag"></i>
+ <html>
+     <head>
+         <title>fullstore | Ecommerce</title>
+         <link rel="stylesheet" href="style.css">
+         <link  rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     </head>
+     <body>
+         <div class="header">
 
 
-               </li>
-          </div>
+         <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+            <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="">Products</a></li>
+           <li><a href="">About</a></li>
+           <li><a href="">Contact</a></li>
+           <li><a href="">Account</a></li>
+           <li><a class="login" href="login.html">Login</a></li>
+           <li><a  href="signup.html">Signup</a></li>
+         </ul>
+            </nav>
+            <img src="images/cart.jpg" width="30px" height="30px">
         </div>
-      </nav>
-      <section id="home">
-        <div class="container">
-          <div class="one">
-            <h5>New Arrivals</h5>
-         <h1><span>WEAR CLOTHES THAT MATTER</span></h1>
-          <P>fullstore offers great quality clothes that makes<br> you shine in the eyes of the viewer<br> welcome to our shop and<br> see a great taste about fashion</P>
-          <button>shop Now</button>
-          </div>
-          </div>
-      </section>
+        <div class="search">
+            <input class="srch"type="search" name="" placeholder="search"  onFocus="this.style.width='800px';" onBlur="this.style.width='300px';">
+            <a href="#"> <button class="btn"> search</button></a>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <h1>Wear Trustworthy Clothes !</h1>
+                <p>The secret of great style is to feel good in what you wear<br>Life is too short to wear boring Clothes</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/women.jpg">
+
+        </div>
+
+
+
+    <div class="photo">
+        <figure>
+        <img class="img" src="images/Brand-Men-Pants-Casual-Mens-Business-Male-Trousers-Classics-Mid-weight-Straight-Full-Length-Fashion-breathing.jpg">
+        <img class="img" src="images/istockphoto-178851955-612x612.jpg">
+        <img  class="img" src="images/green.jpg">
+        <img class="img" src="images/men.jpg">
+        </figure>
+
+    </div>
+
+
+             <!--featued products-->
+        <div class="small-container">
+            <h2>Featured products</h2>
+            <div class="row">
+         <div class="col-4">
+         <img src="images/istockphoto-178851955-612x612.jpg">
+         <h3>women knee length dress</h3>
+         <div class="star">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star" ></i>
+            <i class="glyphicon glyphicon-star" ></i>
+            <i class="glyphicon glyphicon-star" ></i>
+
+
+             </div>
+         <p>$ 40.00</p>
+    </div>
+    <br>
+    <div class="col-4">
+        <img src="images/green.jpg">
+        <h3>formal dress</h3>
+        <div class="star">
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star" ></i>
+            <i class="glyphicon glyphicon-star" ></i>
+            <i class="glyphicon glyphicon-star" ></i>
 
 
 
 
-          <div class="row1">
 
-          <div class="row">
-              <img class="img-fluid" src="images/istockphoto-178851955-612x612.jpg"  onmouseover="src='dress1.jpg'" onmouseleave="src='images/istockphoto-178851955-612x612.jpg'">
 
-                <h2>Dresses</h2>
-                <button class="text.upperCase" id="shop Now">shop now</button>
 
             </div>
-            <div class="row">
-
-                <img  src="./bag1.jpg" onmouseover="src='bag2.jpg'", onmouseleave="src='./bag1.jpg'">
-                <h3>Bags</h3>
-
-                <button class="text.uppercase" >shop now </button>
-</div>
-      </div>
-      <svg width="10" height="5">
-  <polygon points="100,10 40,198 190,78 10,78 160,198"
-  style="fill:black;stroke:black;stroke-width:5;fill-rule:evenodd;" />
-</svg>
-
+        <p>$ 40.00</p>
+        </div>
+        <br>
+        <div class="col-4">
+            <img src="images/men.jpg">
+            <h3>pant for men</h3>
+            <div class="star">
+                <i class="glyphicon glyphicon-star"></i>
+                <i class="glyphicon glyphicon-star" ></i>
+                <i class="glyphicon glyphicon-star" ></i>
+                <i class="glyphicon glyphicon-star" ></i>
 
 
+                </div>
+            <p>$ 30.00</p>
+            </div>
+            <br>
+            <div class="col-4">
+                <img src="images/Brand-Men-Pants-Casual-Mens-Business-Male-Trousers-Classics-Mid-weight-Straight-Full-Length-Fashion-breathing.jpg">
+                <h3>cotton men trouser</h3>
+                <div class="star">
+                    <i class="glyphicon glyphicon-star"></i>
+                    <i class="glyphicon glyphicon-star" ></i>
+                    <i class="glyphicon glyphicon-star" ></i>
+                    <i class="glyphicon glyphicon-star" ></i>
+
+
+                    </div>
+                <p>$ 35.00</p>
+                </div>
+                <br>
+                <div class="col-4">
+                    <img src="images/men shoe.jpg">
+                    <h3>men shoe</h3>
+                    <div class="star">
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+                        <i class="glyphicon glyphicon-star" ></i>
+
+
+                        </div>
+                    <p>$ 60.00</p>
+                    </div>
+                    <br>
+                    <div class="col-4">
+                        <img src="images/girlshoe.jpg">
+                        <h3>women heel</h3>
+                        <div class="star">
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star" ></i>
+                            <i class="glyphicon glyphicon-star" ></i>
+                            <i class="glyphicon glyphicon-star" ></i>
+
+
+
+                            </div>
+                        <p>$ 50.00</p>
+            </div>
+          </div>
+           <div>
+               <h2 class="rating">Latest Products</h2><br><br>
+
+               <div class="latestProducts">
+                <div class="col-3">
+                    <img src="images/watch.jpg">
+
+                    <div class="rating">
+                      <h3>watch</h3>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                      <i class="glyphicon glyphicon-star" ></i>
+                      <p>$ 60.00</p>
+                  </div>
+
+                         </div>
+                          <div class="col-3">
+                          <img src="images/product 2.jpg">
+
+                          <div class="rating">
+                              <h3>Women slippers</h3>
+                              <i class="glyphicon glyphicon-star"></i>
+                              <i class="glyphicon glyphicon-star" ></i>
+                              <i class="glyphicon glyphicon-star" ></i>
+                              <i class="glyphicon glyphicon-star" ></i>
+                              <p>$ 15.00</p>
+                              </div>
+
+                          </div>
+                          <div class="col-3">
+                              <img src="images/product3.webp">
+
+                              <div class="rating">
+                                  <h3>Women pants</h3>
+                                  <i class="glyphicon glyphicon-star"></i>
+                                  <i class="glyphicon glyphicon-star" ></i>
+                                  <i class="glyphicon glyphicon-star" ></i>
+                                  <i class="glyphicon glyphicon-star" ></i>
+                                  <p>$ 20.00</p>
+
+                                  </div>
+
+                          </div>
+                          <div class="col-3">
+                           <img src="images/product 4.jpg">
+
+                           <div class="rating">
+                              <h3>Baby shirts</h3>
+                              <i class="glyphicon glyphicon-star"></i>
+                              <i class="glyphicon glyphicon-star" ></i>
+                              <i class="glyphicon glyphicon-star" ></i>
+                              <i class="glyphicon glyphicon-star" ></i>
+
+                              <p>$ 10.00</p>
+                               </div>
+
+                          </div>
+                           <div class="col-3">
+                               <img src="images/product 5.jpg">
+
+                               <div class="rating">
+                                  <h3>Men  slippers</h3>
+                                  <i class="glyphicon glyphicon-star"></i>
+                                  <i class="glyphicon glyphicon-star" ></i>
+                                  <i class="glyphicon glyphicon-star" ></i>
+                                  <i class="glyphicon glyphicon-star" ></i>
+                                  <p>$ 15.00</p>
+                                  </div>
+
+                          </div>
+               </div>
+        </div>
+                     <br>
+
+        </div>
+
+
+ </body>
 
 
 
@@ -95,17 +244,7 @@
 
 
 
-     <header>
-        <div class="container">
-        <!--  <h5>New Arrivals</h5>
-          <h1><span>WEAR CLOTHES THAT MATTER</span></h1>
-           <P>fullstore offers great quality clothes that makes<br> you shine in the eyes of the viewer<br> welcome to our shop and<br> see a great taste about fashion</P>
-           <button>shop Now</button>
-        </div>-->
-      </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-</body>
-</html>
+
+ </html>
