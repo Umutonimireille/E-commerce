@@ -1,0 +1,120 @@
+ img{
+     width: 12%;
+ }
+ h1{
+     font-size: 180%;
+
+ }
+ h3{
+     font-size: 200%;
+ }
+ .navbar{
+     font-size: 16px;
+     top:0 ;
+     left:0 ;
+ }
+ .navbar-light .navbar-nav .nav-link{
+      padding: 0 20px;
+      color:black; ;
+      transition: 0.5s ease;
+ }
+ .navbar-light .navbar-nav .nav-link:hover,
+ .navbar-light .navbar-nav .nav-link.active,
+ nav i .active{
+     color: coral;
+ }
+ .navbar i{
+     font-size: 1.2rem;
+     padding: 0 70px;
+     cursor: pointer;
+     font-weight: 500;
+     transform: 0.5 ease;
+ }
+ #bar{
+     font-size: 1.5rem;
+     padding: 7px;
+     cursor: pointer;
+     font-weight: 500;
+     transition: 00.5s ease;
+     color: black;
+ }
+  #bar:hover,
+  #bar.active{
+      color: coral;
+  }
+   @media  only screen and(max-width:991px){
+       body>nav>div>button:hover,
+       body>nav>div>button:focus{
+           background-color: coral;
+       }
+       body>nav>div>button:hover #bar
+       body>nav>div>button:focus #bar{
+           color:white;
+       
+   }
+
+}
+#navbarSupportedContent > ul{
+     margin: 1rem;
+     justify-content:flex-end ;
+     align-items: flex-end;
+     text-align: right;
+}
+
+
+
+
+ /*Mobile nav*/
+ .navbar-light.navbar-toggler{
+     border: none;
+     outline: none;
+ }
+ #home span{
+    color:coral ;
+ }
+ #home{
+     background-image:url(images/back5.jpg);
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: top 60px center;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+ 
+ button{
+     font-size: 16px;
+     font-weight: 700;
+     outline: none;
+     border: none;
+     background-color: black;
+     color: aliceblue;
+     text-transform: uppercase;
+     padding: 13px 30px;
+     transition: 00.5 ease;
+ }
+ button:hover{
+     background-color: black;
+ }
+
+ .row{
+    
+     width: 300px;
+     height: 100px;
+     margin-left: 200px;
+     float: left;
+     margin-top: 30px;
+
+ }
+  .row1{
+      display: flex;
+  }
+  .shopNow{
+      margin-left: 200px;
+  }
+
+ 
+ 

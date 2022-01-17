@@ -1,0 +1,18 @@
+<?php
+
+$db_user = "root";
+$db_pass = "";
+$db_name = "loginform";
+$db = new PDO('msql:host-localhost;dbname=' .$db_name .';charset=utf8',$db_user,$db_pass);
+$db->setAttribute(PDO::ATTR_ERMODE,PDO::ERMODE_EXCEPTION);
+
+?>
+
+
+
+
+
+
+
+
+
